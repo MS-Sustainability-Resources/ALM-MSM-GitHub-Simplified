@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>msdyn_sustainability</SiteMapUniqueName>
+  <EnableCollapsibleGroups>True</EnableCollapsibleGroups>
+  <ShowHome>False</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="msdyn_AnalyticsArea" ResourceId="SitemapDesigner.NewArea" DescriptionResourceId="SitemapDesigner.NewArea" ShowGroups="true" IntroducedVersion="7.0.0.0" ordinalvalue="0">
+      <Group Id="msdyn_HomeGroup" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="0">
+        <SubArea Id="NewSubArea_f30840ca" ResourceId="SitemapDesigner.NewSubArea" Url="https://learn.microsoft.com/en-us/industry/sustainability/sustainability-manager-overview" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" solutionaction="Added">
+          <Titles>
+            <Title LCID="1033" Title="MSM Documentation" ordinalvalue="0" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="msdyn_AnalyticsGroup" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="1">
+        <SubArea Id="msdyn_InsightsSubArea" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msdyn_/imgs/analyticsview.svg" Icon="/WebResources/msdyn_/imgs/analyticsview.svg" Url="/main.aspx?pagetype=control&amp;controlName=msdyn_MscrmControls.SUS.ReportDashboardControl&amp;data={&quot;targetControl&quot;:&quot;Emissions&quot;}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1051" Title="Prehľady o emisiách" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="msdyn_WaterInsightsSubArea" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msdyn_/imgs/water_insights.svg" Icon="/WebResources/msdyn_/imgs/water_insights.svg" Url="/main.aspx?pagetype=control&amp;controlName=msdyn_MscrmControls.SUS.ReportDashboardControl&amp;data={&quot;targetControl&quot;:&quot;Water&quot;}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2">
+          <Titles>
+            <Title LCID="1051" Title="Prehľady o vode" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="msdyn_WasteInsightsSubArea" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msdyn_/imgs/waste_insights.svg" Icon="/WebResources/msdyn_/imgs/waste_insights.svg" Url="/main.aspx?pagetype=control&amp;controlName=msdyn_MscrmControls.SUS.ReportDashboardControl&amp;data={&quot;targetControl&quot;:&quot;Waste&quot;}" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3">
+          <Titles>
+            <Title LCID="1051" Title="Prehľady o odpade" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="msdyn_ReportsSubArea" VectorIcon="/WebResources/msdyn_/imgs/reportdocument.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_preparationreport" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="4" solutionaction="Modified" />
+        <SubArea Id="msdyn_ScorecardsGroup_ScorecardsSubArea" VectorIcon="/WebResources/msdyn_/imgs/scorecard.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_scorecard" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="5" solutionaction="Modified">
+          <Titles>
+            <Title LCID="1029" Title="Přehled výkonnostních metrik a cíle" ordinalvalue="2" solutionaction="Modified" />
+            <Title LCID="1051" Title="Prehľady ukazovateľov výkonu a ciele" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="msdyn_DataManagementGroup" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="2">
+        <SubArea Id="msdyn_ConnectionsSubArea" VectorIcon="/WebResources/msdyn_/imgs/reference.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_dataconnection" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea Id="msdyn_ActivityDataSubarea" VectorIcon="/WebResources/msdyn_/imgs/libraries.svg" Url="/main.aspx?appid=e4df5340-99d5-405f-b87d-e1e574d99e34&amp;forceUCI=1&amp;pagetype=entitylist&amp;etn=msdyn_sustainabilitydatadefinition&amp;viewid=a40affbd-1bb2-4ce6-8e83-5adcb66593e1&amp;viewType=1039" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1051" Title="Aktivity súvisiace s emisiami uhlíka" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="msdyn_EmissionsListSubArea" VectorIcon="/WebResources/msdyn_/imgs/list.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_emission" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Modified" />
+        <SubArea Id="msdyn_WaterDataSubarea" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msdyn_/imgs/water_data.svg" Icon="/WebResources/msdyn_/imgs/water_data.svg" Url="/main.aspx?appid=e4df5340-99d5-405f-b87d-e1e574d99e34&amp;forceUCI=1&amp;pagetype=entitylist&amp;etn=msdyn_sustainabilitydatadefinition&amp;viewid=2a849b40-c259-ed11-9562-0022483533f5&amp;viewType=1039" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3">
+          <Titles>
+            <Title LCID="1051" Title="Údaje o vode" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="msdyn_WasteDataSubarea" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msdyn_/imgs/waste_data.svg" Icon="/WebResources/msdyn_/imgs/waste_data.svg" Url="/main.aspx?appid=e4df5340-99d5-405f-b87d-e1e574d99e34&amp;forceUCI=1&amp;pagetype=entitylist&amp;etn=msdyn_sustainabilitydatadefinition&amp;viewid=6f11d75d-27e5-ed11-8848-000d3a53f8d4&amp;viewType=1039" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="4">
+          <Titles>
+            <Title LCID="1051" Title="Údaje o odpade" ordinalvalue="24" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="msdyn_ProvidersSubArea" VectorIcon="/WebResources/msdyn_/imgs/connectorproviders.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_connectorprovider" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="9" solutionaction="Modified" />
+      </Group>
+      <Group Id="msdyn_CalculationsGroup" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="3">
+        <SubArea Id="msdyn_CalculationProfilesSubArea" VectorIcon="/WebResources/msdyn_/imgs/datamanagementmirrored.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_calculationprofile" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" solutionaction="Modified" />
+      </Group>
+      <Group Id="msdyn_ValueChainGroup" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="4">
+        <SubArea Id="msdyn_VcpDataImportsSubArea" VectorIcon="/WebResources/msdyn_/imgs/reference.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="msdyn_surveyfileupload" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Modified" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Sustainability Manager" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

@@ -1,0 +1,203 @@
+<entities >
+  <entity name="msdyn_sustainabilityorganizationalunit" displayname="Organizational unit" etc="10398" primaryidfield="msdyn_sustainabilityorganizationalunitid" primarynamefield="msdyn_name" disableplugins="false">
+    <fields>
+      <field displayname="Address line 1" name="msdyn_addressstreet1" type="string" customfield="true" />
+      <field displayname="Address line 2" name="msdyn_addressstreet2" type="string" customfield="true" />
+      <field displayname="Approval status" name="msdyn_approvalstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="City" name="msdyn_addresscity" type="string" customfield="true" />
+      <field displayname="Connection" name="msdyn_dataconnection" type="entityreference" lookupType="msdyn_dataconnection" customfield="true" />
+      <field displayname="ConnectionRefresh" name="msdyn_dataconnectionrefresh" type="entityreference" lookupType="msdyn_dataconnectionrefresh" customfield="true" />
+      <field displayname="Country/Region" name="msdyn_addresscountryisocode" type="string" customfield="true" />
+      <field displayname="Country/Region" name="msdyn_countryregioncode" type="entityreference" lookupType="msdyn_countryregion" customfield="true" />
+      <field displayname="County" name="msdyn_addresscounty" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Latitude" name="msdyn_latitude" type="decimal" customfield="true" />
+      <field displayname="Longitude" name="msdyn_longitude" type="decimal" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Organizational unit type" name="msdyn_organizationalunittype" type="optionsetvalue" customfield="true" />
+      <field displayname="Origin correlation ID" name="msdyn_origincorrelationid" type="string" customfield="true" />
+      <field displayname="Reporting organizational unit" name="msdyn_sustainabilityorganizationalunitid" type="guid" primaryKey="true" />
+      <field displayname="State/Province" name="msdyn_addressstateprovince" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="ZIP/Postal code" name="msdyn_addresszippostalcode" type="string" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_emissioncalculation" displayname="Emission calculation" etc="10532" primaryidfield="msdyn_emissioncalculationid" primarynamefield="msdyn_name" disableplugins="false">
+    <fields>
+      <field displayname="Calculation flow JSON" name="msdyn_calculationflowjson" type="string" customfield="true" />
+      <field displayname="Calculation method" name="msdyn_calculationmethod" type="string" customfield="true" />
+      <field displayname="Created using generative AI" name="msdyn_createdwithgenerativeai" type="bool" customfield="true" />
+      <field displayname="Data source" name="msdyn_datadefinition" type="entityreference" lookupType="msdyn_sustainabilitydatadefinition" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Documentation reference" name="msdyn_documentationreference" type="string" customfield="true" />
+      <field displayname="Emission calculation" name="msdyn_emissioncalculationid" type="guid" primaryKey="true" />
+      <field displayname="Emissions source" name="msdyn_emissionsource" type="entityreference" lookupType="msdyn_emissionsource" customfield="true" />
+      <field displayname="Module" name="msdyn_sustainabilitymodule" type="entityreference" lookupType="msdyn_sustainabilitymodule" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Type" name="msdyn_type" type="optionsetvalue" customfield="true" />
+      <field displayname="Version" name="msdyn_version" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+    <filter>&lt;fetch version="1.0" mapping="logical" distinct="true"&gt;
+  &lt;entity name="msdyn_emissioncalculation"&gt;
+      &lt;filter type="and"&gt;
+        &lt;condition attribute="msdyn_type" operator="eq" value="700610000" /&gt;
+      &lt;/filter&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</filter>
+  </entity>
+  <entity name="msdyn_calculationlibrary" displayname="Factor library" etc="10396" primaryidfield="msdyn_calculationlibraryid" primarynamefield="msdyn_name" disableplugins="false">
+    <fields>
+      <field displayname="Attribution" name="msdyn_attribution" type="string" customfield="true" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Documentation reference" name="msdyn_documentationreference" type="string" customfield="true" />
+      <field displayname="Factor library" name="msdyn_calculationlibraryid" type="guid" primaryKey="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Library type" name="msdyn_librarytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="Module" name="msdyn_sustainabilitymodule" type="entityreference" lookupType="msdyn_sustainabilitymodule" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Origin correlation ID" name="msdyn_origincorrelationid" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Type" name="msdyn_type" type="optionsetvalue" customfield="true" />
+      <field displayname="Version" name="msdyn_version" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Year" name="msdyn_year" type="string" customfield="true" />
+    </fields>
+    <relationships />
+    <filter>&lt;fetch version="1.0" mapping="logical" distinct="true"&gt;
+    &lt;entity name="msdyn_calculationlibrary"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="msdyn_type" operator="eq" value="700610000"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</filter>
+  </entity>
+  <entity name="msdyn_emissionlookup" displayname="Factor mapping" etc="10398" primaryidfield="msdyn_emissionlookupid" primarynamefield="msdyn_name" disableplugins="false">
+    <fields>
+      <field displayname="Approval status" name="msdyn_approvalstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Connection" name="msdyn_dataconnection" type="entityreference" lookupType="msdyn_dataconnection" customfield="true" />
+      <field displayname="Connection refresh" name="msdyn_dataconnectionrefresh" type="entityreference" lookupType="msdyn_dataconnectionrefresh" customfield="true" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Factor" name="msdyn_factorid" type="entityreference" lookupType="msdyn_emissionfactor|msdyn_estimationfactor" customfield="true" />
+      <field displayname="Factor library" name="msdyn_calculationlibraryid" type="entityreference" lookupType="msdyn_calculationlibrary" customfield="true" />
+      <field displayname="Factor mapping" name="msdyn_emissionlookupid" type="guid" primaryKey="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Origin correlation ID" name="msdyn_origincorrelationid" type="string" customfield="true" />
+      <field displayname="Reference data 1" name="msdyn_referencedataid" type="entityreference" lookupType="account|msdyn_accommodationtype|msdyn_businesstraveltype|msdyn_contractualinstrumenttype|msdyn_countryregion|msdyn_disposalmethod|msdyn_employeecommutingtype|msdyn_facility|msdyn_facilityannualdetail|msdyn_facilitytype|msdyn_fueltype|msdyn_geographicarea|msdyn_geographicareatype|msdyn_industrialprocesstype|msdyn_material|msdyn_organizationalunitrevenue|msdyn_spendtype|msdyn_sustainabilityorganizationalunit|msdyn_sustainabilityproduct|msdyn_sustainabilityproductidentifier|msdyn_transportmode|msdyn_valuechainpartner|msdyn_vehicletype" customfield="true" />
+      <field displayname="Reference data 2" name="msdyn_referencedata2id" type="entityreference" lookupType="account|msdyn_accommodationtype|msdyn_businesstraveltype|msdyn_contractualinstrumenttype|msdyn_countryregion|msdyn_disposalmethod|msdyn_employeecommutingtype|msdyn_facility|msdyn_facilityannualdetail|msdyn_facilitytype|msdyn_fueltype|msdyn_geographicarea|msdyn_geographicareatype|msdyn_industrialprocesstype|msdyn_material|msdyn_organizationalunitrevenue|msdyn_spendtype|msdyn_sustainabilityorganizationalunit|msdyn_sustainabilityproduct|msdyn_sustainabilityproductidentifier|msdyn_transportmode|msdyn_valuechainpartner|msdyn_vehicletype" customfield="true" />
+      <field displayname="Reference data 3" name="msdyn_referencedata3id" type="entityreference" lookupType="account|msdyn_accommodationtype|msdyn_businesstraveltype|msdyn_contractualinstrumenttype|msdyn_countryregion|msdyn_disposalmethod|msdyn_employeecommutingtype|msdyn_facility|msdyn_facilityannualdetail|msdyn_facilitytype|msdyn_fueltype|msdyn_geographicarea|msdyn_geographicareatype|msdyn_industrialprocesstype|msdyn_material|msdyn_organizationalunitrevenue|msdyn_spendtype|msdyn_sustainabilityorganizationalunit|msdyn_sustainabilityproduct|msdyn_sustainabilityproductidentifier|msdyn_transportmode|msdyn_valuechainpartner|msdyn_vehicletype" customfield="true" />
+      <field displayname="Reference data 4" name="msdyn_referencedata4id" type="entityreference" lookupType="account|msdyn_accommodationtype|msdyn_businesstraveltype|msdyn_contractualinstrumenttype|msdyn_countryregion|msdyn_disposalmethod|msdyn_employeecommutingtype|msdyn_facility|msdyn_facilityannualdetail|msdyn_facilitytype|msdyn_fueltype|msdyn_geographicarea|msdyn_geographicareatype|msdyn_industrialprocesstype|msdyn_material|msdyn_organizationalunitrevenue|msdyn_spendtype|msdyn_sustainabilityorganizationalunit|msdyn_sustainabilityproduct|msdyn_sustainabilityproductidentifier|msdyn_transportmode|msdyn_valuechainpartner|msdyn_vehicletype" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+    <filter>&lt;fetch version="1.0" mapping="logical" distinct="true"&gt;
+  &lt;entity name="msdyn_emissionlookup"&gt;
+    &lt;link-entity name="msdyn_calculationlibrary" from="msdyn_calculationlibraryid" to="msdyn_calculationlibraryid" link-type="inner"&gt;
+      &lt;filter type="and"&gt;
+        &lt;condition attribute="msdyn_type" operator="eq" value="700610000" /&gt;
+      &lt;/filter&gt;
+    &lt;/link-entity&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</filter>
+  </entity>
+  <entity name="msdyn_emissionfactor" displayname="Emission factor" etc="10395" primaryidfield="msdyn_emissionfactorid" primarynamefield="msdyn_name" disableplugins="false">
+    <fields>
+      <field displayname="Approval status" name="msdyn_approvalstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Biogenic CO₂ factor" name="msdyn_biogenicco2factor" type="decimal" customfield="true" />
+      <field displayname="Biogenic CO₂ factor unit" name="msdyn_biogenicco2factorunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="CH₄" name="msdyn_ch4" type="decimal" customfield="true" />
+      <field displayname="CH₄ unit" name="msdyn_ch4unit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="CO₂" name="msdyn_co2" type="decimal" customfield="true" />
+      <field displayname="CO₂ unit" name="msdyn_co2unit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="CO₂E" name="msdyn_co2e" type="decimal" customfield="true" />
+      <field displayname="CO₂E unit" name="msdyn_co2eunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Connection" name="msdyn_dataconnection" type="entityreference" lookupType="msdyn_dataconnection" customfield="true" />
+      <field displayname="Connection refresh" name="msdyn_dataconnectionrefresh" type="entityreference" lookupType="msdyn_dataconnectionrefresh" customfield="true" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Documentation reference" name="msdyn_documentationreference" type="string" customfield="true" />
+      <field displayname="Emission factor" name="msdyn_emissionfactorid" type="guid" primaryKey="true" />
+      <field displayname="Factor library" name="msdyn_calculationlibraryid" type="entityreference" lookupType="msdyn_calculationlibrary" customfield="true" />
+      <field displayname="Heat content (Deprecated)" name="msdyn_heatcontent" type="decimal" customfield="true" />
+      <field displayname="Heat content unit (Deprecated)" name="msdyn_heatcontentunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="HFCs" name="msdyn_hfcs" type="decimal" customfield="true" />
+      <field displayname="HFCs unit" name="msdyn_hfcsunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Identifier" name="msdyn_identifier" type="string" customfield="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Is biofuel" name="msdyn_isbiofuel" type="bool" customfield="true" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="N₂O" name="msdyn_n2o" type="decimal" customfield="true" />
+      <field displayname="N₂O unit" name="msdyn_n2ounit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="NF₃" name="msdyn_nf3" type="decimal" customfield="true" />
+      <field displayname="NF₃ unit" name="msdyn_nf3unit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Origin correlation ID" name="msdyn_origincorrelationid" type="string" customfield="true" />
+      <field displayname="Other GHGs" name="msdyn_otherghgs" type="decimal" customfield="true" />
+      <field displayname="Other GHGs unit" name="msdyn_otherghgsunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="PFCs" name="msdyn_pfcs" type="decimal" customfield="true" />
+      <field displayname="PFCs unit" name="msdyn_pfcsunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="SF₆" name="msdyn_sf6" type="decimal" customfield="true" />
+      <field displayname="SF₆ unit" name="msdyn_sf6unit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Sub type" name="msdyn_subtype" type="string" customfield="true" />
+      <field displayname="Type" name="msdyn_type" type="string" customfield="true" />
+      <field displayname="Unit" name="msdyn_unit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+    <filter>&lt;fetch version="1.0" mapping="logical" distinct="true"&gt;
+  &lt;entity name="msdyn_emissionfactor"&gt;
+    &lt;link-entity name="msdyn_calculationlibrary" from="msdyn_calculationlibraryid" to="msdyn_calculationlibraryid" link-type="inner"&gt;
+      &lt;filter type="and"&gt;
+        &lt;condition attribute="msdyn_type" operator="eq" value="700610000" /&gt;
+      &lt;/filter&gt;
+    &lt;/link-entity&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</filter>
+  </entity>
+  <entity name="msdyn_estimationfactor" displayname="Estimation factor" etc="10392" primaryidfield="msdyn_estimationfactorid" primarynamefield="msdyn_name" disableplugins="false">
+    <fields>
+      <field displayname="Approval status" name="msdyn_approvalstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Connection" name="msdyn_dataconnection" type="entityreference" lookupType="msdyn_dataconnection" customfield="true" />
+      <field displayname="Connection refresh" name="msdyn_dataconnectionrefresh" type="entityreference" lookupType="msdyn_dataconnectionrefresh" customfield="true" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Documentation reference" name="msdyn_documentationreference" type="string" customfield="true" />
+      <field displayname="Estimation factor" name="msdyn_estimationfactorid" type="guid" primaryKey="true" />
+      <field displayname="Factor library" name="msdyn_factorlibrary" type="entityreference" lookupType="msdyn_calculationlibrary" customfield="true" />
+      <field displayname="Factor value" name="msdyn_factorvalue" type="decimal" customfield="true" />
+      <field displayname="Factor value unit" name="msdyn_factorvalueunit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Origin correlation ID" name="msdyn_origincorrelationid" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Sub type" name="msdyn_subtype" type="string" customfield="true" />
+      <field displayname="Type" name="msdyn_type" type="string" customfield="true" />
+      <field displayname="Unit" name="msdyn_unit" type="entityreference" lookupType="msdyn_unit" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+    <filter>&lt;fetch version="1.0" mapping="logical" distinct="true"&gt;
+  &lt;entity name="msdyn_estimationfactor"&gt;
+    &lt;link-entity name="msdyn_calculationlibrary" from="msdyn_calculationlibraryid" to="msdyn_factorlibrary" link-type="inner"&gt;
+      &lt;filter type="and"&gt;
+        &lt;condition attribute="msdyn_type" operator="eq" value="700610000" /&gt;
+      &lt;/filter&gt;
+    &lt;/link-entity&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</filter>
+  </entity>
+</entities>

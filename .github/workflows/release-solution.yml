@@ -53,7 +53,7 @@ jobs:
       uses: microsoft/powerplatform-actions/pack-solution@v1
       with:
         solution-folder: ${{ inputs.solution_source_folder}}/${{ inputs.solution_name }}
-        solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}.zip
+        solution-file: ${{ inputs.solution_shipping_folder}}/${{ inputs.solution_name }}.zip
         solution-type: Managed
 
     - name: Upload the ready to ship solution to GH artifact store
