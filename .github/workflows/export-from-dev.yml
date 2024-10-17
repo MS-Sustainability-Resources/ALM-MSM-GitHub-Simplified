@@ -1,0 +1,78 @@
+name: export-solution-and-data
+# Export solution from DEV environment
+#  unpack it and prepare, commit and push a git branch with the changes
+
+on:
+  workflow_dispatch:
+    inputs:
+      solution_name:
+        description: 'name of the solution to worked on from Power Platform'
+        required: true
+        default: ALMSolution
+env:
+#edit your values here
+  solution_exported_folder: out/exported/
+  solution_folder: out/solutions/
+  solution_target_folder: solutions/
+permissions:
+  contents: write
+jobs:
+  export-from-dev:
+    runs-on: windows-latest
+    environment: 
+      name: DEV Environment
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+    - name: Install Power Platform Tools
+      uses: microsoft/powerplatform-actions/actions-install@v1
+
+    - uses: actions/checkout@v4
+      with:
+        lfs: true
+
+    - name: export-solution action
+      uses: microsoft/powerplatform-actions/export-solution@v1
+      with:
+        environment-url: ${{vars.ENVIRONMENT_URL}}
+        app-id: ${{vars.CLIENT_ID}}
+        client-secret: ${{ secrets.POWERPLATFORMAUTHSECRET }}
+        tenant-id: ${{vars.TENANT_ID}}
+        solution-name: ${{ github.event.inputs.solution_name }}
+        solution-output-file: ${{ env.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
+        managed: true
+
+    - name: unpack-solution action
+      uses: microsoft/powerplatform-actions/unpack-solution@v1
+      with:
+        solution-file: ${{ env.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
+        solution-folder: ${{ env.solution_folder}}/${{ github.event.inputs.solution_name }}
+        solution-type: 'Managed'
+        overwrite-files: true
+
+    - name: export-data action
+      uses: microsoft/powerplatform-actions/export-data@v1
+      with:
+        environment-url: ${{vars.ENVIRONMENT_URL}}
+        app-id: ${{vars.CLIENT_ID}}
+        client-secret: ${{ secrets.POWERPLATFORMAUTHSECRET }}
+        tenant-id: ${{vars.TENANT_ID}}
+        schema-file: .github/workflows/ALMLabExportSchema.xml
+        data-file: ${{ env.solution_folder}}configurationData.zip
+ 
+    - name: unpack configuration data
+      shell: pwsh
+      run: Expand-Archive -Path ${{ env.solution_folder}}configurationData.zip -DestinationPath ${{ env.solution_folder}}/configurationData
+
+    - name: delete zipped configuration data
+      shell: pwsh
+      run: Remove-Item -Path ${{ env.solution_folder}}configurationData.zip 
+
+    - name: branch-solution, prepare it for a PullRequest
+      uses: microsoft/powerplatform-actions/branch-solution@v1
+      with:
+        solution-folder: ${{ env.solution_folder}}
+        solution-target-folder: ${{ env.solution_target_folder}}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        allow-empty-commit: true  
