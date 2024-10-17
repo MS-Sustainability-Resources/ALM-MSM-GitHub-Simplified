@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24092.202" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24092.202" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.24092.00202">
+  <SolutionManifest>
+    <UniqueName>ALMSolution</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="ALMSolution" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>Contoso</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Contoso" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>contoso</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>33065</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="62" schemaName="msdyn_sustainability" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_allocationprofile" displayName="Allocation profile" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_calculationlibrary" displayName="Factor library" solution="msdyn_SustainabilitySharedDataModel (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_calculationprofile" displayName="Calculation profile" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_connectorprovider" displayName="Connector provider" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataconnection" displayName="Connection" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_datainsight" displayName="(Preview) Data insight" solution="msdyn_IntelligentInsightsForSustainability (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_emission" displayName="Emission" solution="msdyn_SustainabilityCarbonDataModel (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_emissioncalculation" displayName="Emission calculation" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_enablereport_sustainability" displayName="Report settings" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_msteamssettingsv2" displayName="msdyn_msteamssettingsv2" solution="msdynce_OfficeProductivity (9.0.24083.10001)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_organizationalprofile" displayName="Organizational profile" solution="msdyn_SustainabilitySharedDataModel (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_preparationreport" displayName="Report" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_scorecard" displayName="Scorecard" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_sustainabilitydocument" displayName="Sustainability document" solution="msdyn_SustainabilityPremiumEntities (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_sustainabilityusersetting" displayName="Sustainability User Setting" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msfsi_documentrequest" displayName="Document request" solution="DocumentIntelligenceDataModel (1.6.2.18)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/allocationicon.svg" displayName="msdyn_/imgs/allocationicon.svg" solution="msdyn_SustainabilityPremiumNavigations (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/analyticsview.svg" displayName="msdyn_/imgs/analyticsview.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/communication.svg" displayName="msdyn_/imgs/communication.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/connectorproviders.svg" displayName="msdyn_/imgs/connectorproviders.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/customentity.svg" displayName="msdyn_/imgs/customentity.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/databasesource.svg" displayName="msdyn_/imgs/databasesource.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/datamanagementmirrored.svg" displayName="msdyn_/imgs/datamanagementmirrored.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/folderdata.svg" displayName="msdyn_/imgs/folderdata.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/gear.svg" displayName="msdyn_/imgs/gear.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/group.svg" displayName="msdyn_/imgs/group.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/home_icon.svg" displayName="msdyn_/imgs/home_icon.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/intelligentinsights.svg" displayName="msdyn_/imgs/intelligentinsights.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/invoice.svg" displayName="msdyn_/imgs/invoice.svg" solution="msdyn_SustainabilityDataCapture (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/libraries.svg" displayName="msdyn_/imgs/libraries.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/lightbulb.svg" displayName="msdyn_/imgs/lightbulb.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/list.svg" displayName="msdyn_/imgs/list.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/msdyn_calculationlibrary.svg" displayName="msdyn_/imgs/msdyn_calculationlibrary.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/org.svg" displayName="msdyn_/imgs/org.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/promoteddatabase.svg" displayName="msdyn_/imgs/promoteddatabase.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/reference.svg" displayName="msdyn_/imgs/reference.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/reportdocument.svg" displayName="msdyn_/imgs/reportdocument.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/rowschild.svg" displayName="msdyn_/imgs/rowschild.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/scorecard.svg" displayName="msdyn_/imgs/scorecard.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/summarychart.svg" displayName="msdyn_/imgs/summarychart.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/teams.svg" displayName="msdyn_/imgs/teams.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/waste_data.svg" displayName="msdyn_/imgs/waste_data.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/waste_insights.svg" displayName="msdyn_/imgs/waste_insights.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/water_data.svg" displayName="msdyn_/imgs/water_data.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/water_insights.svg" displayName="msdyn_/imgs/water_insights.svg" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="msdyn_sustainability" solution="msdyn_SustainabilityApplication (2.23.0.313)">
+          <package>msdyn_SustainabilityPremiumAnchor (2.23.0.313)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_sustainability" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
