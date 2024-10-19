@@ -1,5 +1,5 @@
 
-<entities xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timestamp="2024-10-17T13:31:40.8658112Z">
+<entities xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timestamp="2024-10-19T00:10:19.1574317Z">
   <entity name="msdyn_sustainabilityorganizationalunit" displayname="Organizational unit">
     <records>
       <record id="b534369b-811c-ec11-b6e6-000d3a5bc635">
@@ -167,6 +167,17 @@
         <field name="msdyn_sustainabilitymodule" value="82a725d0-a9f7-4c18-992b-600b67c7ac7c" lookupentity="msdyn_sustainabilitymodule" lookupentityname="Carbon activities" />
         <field name="msdyn_name" value="Stationary Combustion - with static factor" />
         <field name="msdyn_type" value="700610000" />
+        <field name="msdyn_modeljsonversion" value="1.0.0.0" />
+      </record>
+      <record id="2b1b10ce-478d-ef11-ac21-6045bd064372">
+        <field name="msdyn_calculationflowjson" value="{&amp;quot;nodes&amp;quot;:{&amp;quot;82a872af-3a50-40fa-bfa4-5b19adec4e10&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;82a872af-3a50-40fa-bfa4-5b19adec4e10&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Industrial process emissions by quantity&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Source&amp;quot;,&amp;quot;sourceEntity&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;moduleId&amp;quot;:&amp;quot;82a725d0-a9f7-4c18-992b-600b67c7ac7c&amp;quot;,&amp;quot;dataDefinitionId&amp;quot;:&amp;quot;e902fe93-3179-499d-a702-80a693a4ca6b&amp;quot;},&amp;quot;ccbb7b3c-50bc-41ca-b6a3-00d651ede20a&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;ccbb7b3c-50bc-41ca-b6a3-00d651ede20a&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Quantity by IP type&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Report&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;isAlternateResultInvalid&amp;quot;:false,&amp;quot;isPCFBased&amp;quot;:false,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:false,&amp;quot;factorMappingLookupEntitiesJSON&amp;quot;:&amp;quot;{\&amp;quot;msdyn_industrialprocesstype\&amp;quot;:\&amp;quot;Activity.msdyn_industrialprocesstypeid\&amp;quot;}&amp;quot;,&amp;quot;exitModelOnSuccess&amp;quot;:false,&amp;quot;isAlternateResultExperience&amp;quot;:false,&amp;quot;accountingMethodId&amp;quot;:&amp;quot;57be2498-e268-4d7e-801d-bed0d204449b&amp;quot;,&amp;quot;valueExpression&amp;quot;:&amp;quot;Activity.msdyn_quantity&amp;quot;,&amp;quot;unitOfMeasureId&amp;quot;:&amp;quot;Activity.msdyn_quantityunit&amp;quot;,&amp;quot;calculationLibraryId&amp;quot;:&amp;quot;fe8d3314-478d-ef11-ac21-6045bd064372&amp;quot;,&amp;quot;emissionFactorId&amp;quot;:&amp;quot;Activity.msdyn_industrialprocesstypeid&amp;quot;}},&amp;quot;incomingEdges&amp;quot;:{&amp;quot;ccbb7b3c-50bc-41ca-b6a3-00d651ede20a&amp;quot;:[&amp;quot;82a872af-3a50-40fa-bfa4-5b19adec4e10&amp;quot;]},&amp;quot;sourceActionSequence&amp;quot;:[&amp;quot;82a872af-3a50-40fa-bfa4-5b19adec4e10&amp;quot;]}" />
+        <field name="msdyn_createdwithgenerativeai" value="False" />
+        <field name="msdyn_datadefinition" value="e902fe93-3179-499d-a702-80a693a4ca6b" lookupentity="msdyn_sustainabilitydatadefinition" lookupentityname="Industrial process" />
+        <field name="msdyn_emissioncalculationid" value="2b1b10ce-478d-ef11-ac21-6045bd064372" />
+        <field name="msdyn_sustainabilitymodule" value="82a725d0-a9f7-4c18-992b-600b67c7ac7c" lookupentity="msdyn_sustainabilitymodule" lookupentityname="Carbon activities" />
+        <field name="msdyn_name" value="Industrial process emissions by quantity" />
+        <field name="msdyn_type" value="700610000" />
+        <field name="msdyn_modeljsonversion" value="1.0.0.0" />
       </record>
       <record id="1625696d-f2d8-ed11-a7c6-6045bda839f7">
         <field name="msdyn_calculationflowjson" value="{&amp;quot;nodes&amp;quot;:{&amp;quot;72e4cefc-fdf7-428d-8715-c4974a587279&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;72e4cefc-fdf7-428d-8715-c4974a587279&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;0. Purchased Electricity with Custom Dimensions&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Source&amp;quot;,&amp;quot;sourceEntity&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;moduleId&amp;quot;:&amp;quot;82a725d0-a9f7-4c18-992b-600b67c7ac7c&amp;quot;,&amp;quot;dataDefinitionId&amp;quot;:&amp;quot;35c356cc-3edb-44aa-8243-9ad44f4d6ed4&amp;quot;,&amp;quot;calculationMethod&amp;quot;:&amp;quot;Emission = Electricity * EF with custom dimensions&amp;quot;},&amp;quot;75bb9a8b-2b41-436f-bbf1-727a768174c1&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;75bb9a8b-2b41-436f-bbf1-727a768174c1&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Robusta Coffee&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Condition&amp;quot;,&amp;quot;condition&amp;quot;:&amp;quot;Activity.msdyn_customdimension.&amp;#39;Coffee Species&amp;#39; = \&amp;quot;robusta\&amp;quot;&amp;quot;,&amp;quot;pfxFormula&amp;quot;:{&amp;quot;activity&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;operation&amp;quot;:&amp;quot;=&amp;quot;,&amp;quot;input&amp;quot;:&amp;quot;&amp;quot;},&amp;quot;isValid&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:true,&amp;quot;errorMsg&amp;quot;:&amp;quot;The calculation formula is invalid. Please review the formula and verify its validity.&amp;quot;,&amp;quot;trueAction&amp;quot;:&amp;quot;17cad6f3-9f5c-45a8-a778-f7057914bc73&amp;quot;,&amp;quot;falseAction&amp;quot;:&amp;quot;998a2b6b-721f-4cf7-8f42-7de733af0a06&amp;quot;},&amp;quot;17cad6f3-9f5c-45a8-a778-f7057914bc73&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;17cad6f3-9f5c-45a8-a778-f7057914bc73&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Amplified Robusta Coffee&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Report&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:true,&amp;quot;factorMappingLookupEntitiesJSON&amp;quot;:&amp;quot;{}&amp;quot;,&amp;quot;valueExpression&amp;quot;:&amp;quot;Activity.msdyn_customdimension.&amp;#39;Production Amplifier&amp;#39; * Activity.msdyn_quantity&amp;quot;,&amp;quot;unitOfMeasureId&amp;quot;:&amp;quot;Activity.msdyn_quantityunit&amp;quot;,&amp;quot;calculationLibraryId&amp;quot;:&amp;quot;058e40f3-7aca-ec11-a7b4-000d3a6dbb67&amp;quot;,&amp;quot;emissionFactorId&amp;quot;:&amp;quot;5dfa8b55-0fa5-a0de-6150-13a4604c93d0&amp;quot;},&amp;quot;998a2b6b-721f-4cf7-8f42-7de733af0a06&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;998a2b6b-721f-4cf7-8f42-7de733af0a06&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Other Coffee Species&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Report&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;Example: Custom Dimension in condition and calculation&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:false,&amp;quot;factorMappingLookupEntitiesJSON&amp;quot;:&amp;quot;{}&amp;quot;,&amp;quot;valueExpression&amp;quot;:&amp;quot;Activity.msdyn_quantity&amp;quot;,&amp;quot;unitOfMeasureId&amp;quot;:&amp;quot;Activity.msdyn_quantityunit&amp;quot;,&amp;quot;calculationLibraryId&amp;quot;:&amp;quot;058e40f3-7aca-ec11-a7b4-000d3a6dbb67&amp;quot;,&amp;quot;emissionFactorId&amp;quot;:&amp;quot;5dfa8b55-0fa5-a0de-6150-13a4604c93d0&amp;quot;}},&amp;quot;incomingEdges&amp;quot;:{&amp;quot;75bb9a8b-2b41-436f-bbf1-727a768174c1&amp;quot;:[&amp;quot;72e4cefc-fdf7-428d-8715-c4974a587279&amp;quot;],&amp;quot;17cad6f3-9f5c-45a8-a778-f7057914bc73&amp;quot;:[&amp;quot;75bb9a8b-2b41-436f-bbf1-727a768174c1&amp;quot;],&amp;quot;998a2b6b-721f-4cf7-8f42-7de733af0a06&amp;quot;:[&amp;quot;75bb9a8b-2b41-436f-bbf1-727a768174c1&amp;quot;]},&amp;quot;sourceActionSequence&amp;quot;:[&amp;quot;72e4cefc-fdf7-428d-8715-c4974a587279&amp;quot;]}" />
@@ -178,6 +189,7 @@
         <field name="msdyn_sustainabilitymodule" value="82a725d0-a9f7-4c18-992b-600b67c7ac7c" lookupentity="msdyn_sustainabilitymodule" lookupentityname="Carbon activities" />
         <field name="msdyn_name" value="0. Purchased Electricity with Custom Dimensions" />
         <field name="msdyn_type" value="700610000" />
+        <field name="msdyn_modeljsonversion" value="1.0.0.0" />
       </record>
       <record id="b65a12f4-f2d8-ed11-a7c6-6045bda839f7">
         <field name="msdyn_calculationflowjson" value="{&amp;quot;nodes&amp;quot;:{&amp;quot;0598ca7b-1140-452b-b1a1-dec8e8d2d77d&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;0598ca7b-1140-452b-b1a1-dec8e8d2d77d&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;1. Waste in Operations with Custom Dimensions&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Source&amp;quot;,&amp;quot;sourceEntity&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;moduleId&amp;quot;:&amp;quot;82a725d0-a9f7-4c18-992b-600b67c7ac7c&amp;quot;,&amp;quot;dataDefinitionId&amp;quot;:&amp;quot;77296caa-41ef-4980-bcbf-a811e6586397&amp;quot;,&amp;quot;calculationMethod&amp;quot;:&amp;quot;Waste in mass * EF with custom calculations&amp;quot;},&amp;quot;9aecd7be-b4aa-4ce4-b464-b3ae0a533e9f&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;9aecd7be-b4aa-4ce4-b464-b3ae0a533e9f&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Robusta Coffee Species&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Condition&amp;quot;,&amp;quot;condition&amp;quot;:&amp;quot;Activity.msdyn_customdimension.&amp;#39;Coffee Species&amp;#39; = \&amp;quot;robusta\&amp;quot;&amp;quot;,&amp;quot;pfxFormula&amp;quot;:{&amp;quot;activity&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;operation&amp;quot;:&amp;quot;=&amp;quot;,&amp;quot;input&amp;quot;:&amp;quot;&amp;quot;},&amp;quot;isValid&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:true,&amp;quot;errorMsg&amp;quot;:&amp;quot;The calculation formula is invalid. Please review the formula and verify its validity.&amp;quot;,&amp;quot;trueAction&amp;quot;:&amp;quot;b46da0c2-ec8d-4739-b617-15b03bf90b95&amp;quot;,&amp;quot;falseAction&amp;quot;:&amp;quot;62cc8acf-e295-4b09-bf4c-3da1363f9458&amp;quot;},&amp;quot;b46da0c2-ec8d-4739-b617-15b03bf90b95&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;b46da0c2-ec8d-4739-b617-15b03bf90b95&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Amplified Robusta Coffee&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Report&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:true,&amp;quot;factorMappingLookupEntitiesJSON&amp;quot;:&amp;quot;{\&amp;quot;msdyn_material\&amp;quot;:\&amp;quot;Activity.msdyn_materialid\&amp;quot;,\&amp;quot;msdyn_disposalmethod\&amp;quot;:\&amp;quot;Activity.msdyn_disposalmethodid\&amp;quot;}&amp;quot;,&amp;quot;valueExpression&amp;quot;:&amp;quot;Activity.msdyn_customdimension.&amp;#39;Production Amplifier&amp;#39; * Activity.msdyn_wastequantity&amp;quot;,&amp;quot;unitOfMeasureId&amp;quot;:&amp;quot;Activity.msdyn_wastequantityunit&amp;quot;,&amp;quot;calculationLibraryId&amp;quot;:&amp;quot;8834d151-5a2a-ed11-9db1-000d3a34116e&amp;quot;,&amp;quot;emissionFactorId&amp;quot;:&amp;quot;Activity.msdyn_disposalmethodid&amp;quot;},&amp;quot;62cc8acf-e295-4b09-bf4c-3da1363f9458&amp;quot;:{&amp;quot;id&amp;quot;:&amp;quot;62cc8acf-e295-4b09-bf4c-3da1363f9458&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;Other Coffee Species&amp;quot;,&amp;quot;actionType&amp;quot;:&amp;quot;Report&amp;quot;,&amp;quot;isValid&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isPowerExperience&amp;quot;:false,&amp;quot;factorMappingLookupEntitiesJSON&amp;quot;:&amp;quot;{\&amp;quot;msdyn_material\&amp;quot;:\&amp;quot;Activity.msdyn_materialid\&amp;quot;,\&amp;quot;msdyn_disposalmethod\&amp;quot;:\&amp;quot;Activity.msdyn_disposalmethodid\&amp;quot;}&amp;quot;,&amp;quot;valueExpression&amp;quot;:&amp;quot;Activity.msdyn_wastequantity&amp;quot;,&amp;quot;unitOfMeasureId&amp;quot;:&amp;quot;Activity.msdyn_wastequantityunit&amp;quot;,&amp;quot;calculationLibraryId&amp;quot;:&amp;quot;8834d151-5a2a-ed11-9db1-000d3a34116e&amp;quot;,&amp;quot;emissionFactorId&amp;quot;:&amp;quot;Activity.msdyn_disposalmethodid&amp;quot;}},&amp;quot;incomingEdges&amp;quot;:{&amp;quot;9aecd7be-b4aa-4ce4-b464-b3ae0a533e9f&amp;quot;:[&amp;quot;0598ca7b-1140-452b-b1a1-dec8e8d2d77d&amp;quot;],&amp;quot;b46da0c2-ec8d-4739-b617-15b03bf90b95&amp;quot;:[&amp;quot;9aecd7be-b4aa-4ce4-b464-b3ae0a533e9f&amp;quot;],&amp;quot;62cc8acf-e295-4b09-bf4c-3da1363f9458&amp;quot;:[&amp;quot;9aecd7be-b4aa-4ce4-b464-b3ae0a533e9f&amp;quot;]},&amp;quot;sourceActionSequence&amp;quot;:[&amp;quot;0598ca7b-1140-452b-b1a1-dec8e8d2d77d&amp;quot;]}" />
@@ -189,9 +201,51 @@
         <field name="msdyn_sustainabilitymodule" value="82a725d0-a9f7-4c18-992b-600b67c7ac7c" lookupentity="msdyn_sustainabilitymodule" lookupentityname="Carbon activities" />
         <field name="msdyn_name" value="1. Waste in Operations with Custom Dimensions" />
         <field name="msdyn_type" value="700610000" />
+        <field name="msdyn_modeljsonversion" value="1.0.0.0" />
       </record>
     </records>
-    <m2mrelationships />
+    <m2mrelationships>
+      <m2mrelationship sourceid="8108b240-8a8c-ef11-ac21-00224805cfc3" targetentityname="msdyn_sustainabilitymodule" targetentitynameidfield="msdyn_sustainabilitymoduleid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_module">
+        <targetids>
+          <targetid>82a725d0-a9f7-4c18-992b-600b67c7ac7c</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="8108b240-8a8c-ef11-ac21-00224805cfc3" targetentityname="msdyn_sustainabilitydatadefinition" targetentitynameidfield="msdyn_sustainabilitydatadefinitionid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_sdd">
+        <targetids>
+          <targetid>b063c661-4e97-4dec-896a-73fd6725c03d</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="2b1b10ce-478d-ef11-ac21-6045bd064372" targetentityname="msdyn_sustainabilitymodule" targetentitynameidfield="msdyn_sustainabilitymoduleid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_module">
+        <targetids>
+          <targetid>82a725d0-a9f7-4c18-992b-600b67c7ac7c</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="2b1b10ce-478d-ef11-ac21-6045bd064372" targetentityname="msdyn_sustainabilitydatadefinition" targetentitynameidfield="msdyn_sustainabilitydatadefinitionid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_sdd">
+        <targetids>
+          <targetid>e902fe93-3179-499d-a702-80a693a4ca6b</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="1625696d-f2d8-ed11-a7c6-6045bda839f7" targetentityname="msdyn_sustainabilitymodule" targetentitynameidfield="msdyn_sustainabilitymoduleid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_module">
+        <targetids>
+          <targetid>82a725d0-a9f7-4c18-992b-600b67c7ac7c</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="1625696d-f2d8-ed11-a7c6-6045bda839f7" targetentityname="msdyn_sustainabilitydatadefinition" targetentitynameidfield="msdyn_sustainabilitydatadefinitionid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_sdd">
+        <targetids>
+          <targetid>35c356cc-3edb-44aa-8243-9ad44f4d6ed4</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="b65a12f4-f2d8-ed11-a7c6-6045bda839f7" targetentityname="msdyn_sustainabilitymodule" targetentitynameidfield="msdyn_sustainabilitymoduleid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_module">
+        <targetids>
+          <targetid>82a725d0-a9f7-4c18-992b-600b67c7ac7c</targetid>
+        </targetids>
+      </m2mrelationship>
+      <m2mrelationship sourceid="b65a12f4-f2d8-ed11-a7c6-6045bda839f7" targetentityname="msdyn_sustainabilitydatadefinition" targetentitynameidfield="msdyn_sustainabilitydatadefinitionid" m2mrelationshipname="msdyn_msdyn_emissioncalculation_msdyn_sdd">
+        <targetids>
+          <targetid>77296caa-41ef-4980-bcbf-a811e6586397</targetid>
+        </targetids>
+      </m2mrelationship>
+    </m2mrelationships>
   </entity>
   <entity name="msdyn_calculationlibrary" displayname="Factor library">
     <records>
@@ -247,6 +301,18 @@
         <field name="statuscode" value="1" />
         <field name="msdyn_type" value="700610000" />
       </record>
+      <record id="fe8d3314-478d-ef11-ac21-6045bd064372">
+        <field name="createdon" value="2024-10-18T11:49:50.0000000Z" />
+        <field name="msdyn_calculationlibraryid" value="fe8d3314-478d-ef11-ac21-6045bd064372" />
+        <field name="msdyn_librarytype" value="192350000" />
+        <field name="modifiedon" value="2024-10-18T11:49:50.0000000Z" />
+        <field name="msdyn_sustainabilitymodule" value="82a725d0-a9f7-4c18-992b-600b67c7ac7c" lookupentity="msdyn_sustainabilitymodule" lookupentityname="Carbon activities" />
+        <field name="msdyn_name" value="Contoso industrial process library" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="msdyn_type" value="700610000" />
+        <field name="msdyn_year" value="2024" />
+      </record>
     </records>
     <m2mrelationships />
   </entity>
@@ -300,6 +366,18 @@
         <field name="modifiedon" value="2024-10-15T19:54:55.0000000Z" />
         <field name="msdyn_name" value="Defra 2022 - WTT - fuels - Coal (industrial) tonnes" />
         <field name="msdyn_referencedataid" value="a856626f-d68c-4b15-ae72-b213e59f5a8a" lookupentity="msdyn_fueltype" lookupentityname="Coal and Coke - Mixed (Commercial Sector)" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+      </record>
+      <record id="3dca8376-478d-ef11-ac21-6045bd064372">
+        <field name="msdyn_approvalstatus" value="700610001" />
+        <field name="createdon" value="2024-10-18T11:52:41.0000000Z" />
+        <field name="msdyn_factorid" value="40809854-478d-ef11-ac21-6045bd064372" lookupentity="msdyn_emissionfactor" lookupentityname="Cement Production - Emissions from clinker" />
+        <field name="msdyn_calculationlibraryid" value="fe8d3314-478d-ef11-ac21-6045bd064372" lookupentity="msdyn_calculationlibrary" lookupentityname="Contoso industrial process library" />
+        <field name="msdyn_emissionlookupid" value="3dca8376-478d-ef11-ac21-6045bd064372" />
+        <field name="modifiedon" value="2024-10-18T11:52:41.0000000Z" />
+        <field name="msdyn_name" value="Cement Production - Emissions from clinker" />
+        <field name="msdyn_referencedataid" value="6b87dcc0-b0b7-ec11-983f-6045bd005711" lookupentity="msdyn_industrialprocesstype" lookupentityname="Cement Production" />
         <field name="statecode" value="0" />
         <field name="statuscode" value="1" />
       </record>
@@ -2325,6 +2403,21 @@
         <field name="statecode" value="0" />
         <field name="statuscode" value="1" />
         <field name="msdyn_unit" value="da144fcc-1e17-ec11-b6e6-0022480b6180" lookupentity="msdyn_unit" lookupentityname="mtCO2e" />
+      </record>
+      <record id="40809854-478d-ef11-ac21-6045bd064372">
+        <field name="msdyn_approvalstatus" value="700610001" />
+        <field name="msdyn_co2" value="0.5070000000" />
+        <field name="msdyn_co2unit" value="ee144fcc-1e17-ec11-b6e6-0022480b6180" lookupentity="msdyn_unit" lookupentityname="metricton" />
+        <field name="createdon" value="2024-10-18T11:51:47.0000000Z" />
+        <field name="msdyn_description" value="Tier 1 method for Co2 emissions estimation based on clinker quantity" />
+        <field name="msdyn_emissionfactorid" value="40809854-478d-ef11-ac21-6045bd064372" />
+        <field name="msdyn_calculationlibraryid" value="fe8d3314-478d-ef11-ac21-6045bd064372" lookupentity="msdyn_calculationlibrary" lookupentityname="Contoso industrial process library" />
+        <field name="msdyn_isbiofuel" value="False" />
+        <field name="modifiedon" value="2024-10-18T11:51:47.0000000Z" />
+        <field name="msdyn_name" value="Cement Production - Emissions from clinker" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="msdyn_unit" value="ee144fcc-1e17-ec11-b6e6-0022480b6180" lookupentity="msdyn_unit" lookupentityname="metricton" />
       </record>
     </records>
     <m2mrelationships />

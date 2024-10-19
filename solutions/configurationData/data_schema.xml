@@ -38,8 +38,12 @@
       <field displayname="Type" name="msdyn_type" type="optionsetvalue" customfield="true" />
       <field displayname="Version" name="msdyn_version" type="string" customfield="true" />
       <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Model json version" name="msdyn_modeljsonversion" type="string" customfield="true" />
     </fields>
-    <relationships />
+    <relationships>
+      <relationship name="msdyn_msdyn_emissioncalculation_msdyn_module" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_msdyn_emissioncalculation_msdyn_module" m2mTargetEntity="msdyn_sustainabilitymodule" m2mTargetEntityPrimaryKey="msdyn_sustainabilitymoduleid" />
+      <relationship name="msdyn_msdyn_emissioncalculation_msdyn_sdd" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_msdyn_emissioncalculation_msdyn_sdd" m2mTargetEntity="msdyn_sustainabilitydatadefinition" m2mTargetEntityPrimaryKey="msdyn_sustainabilitydatadefinitionid" />
+    </relationships>
     <filter>&lt;fetch version="1.0" mapping="logical" distinct="true"&gt;
   &lt;entity name="msdyn_emissioncalculation"&gt;
       &lt;filter type="and"&gt;
